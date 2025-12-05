@@ -23,7 +23,14 @@ jobs:
       
       - name: "login to docker hub"
         run: docker login --username mohamednower --password 123456MM7815
-        
+
+      - name: "bulding docker image"
+        run: docker build -t mohamednower/my2023040221
+      
+      - name: "pushing to docker hub"
+        run: docker push mohamednower/my2023040221
+
+ 
 
 
 
