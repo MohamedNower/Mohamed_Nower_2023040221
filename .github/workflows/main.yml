@@ -20,7 +20,12 @@ jobs:
 
       - name: 'printing folder contents 2'
         run: ls
- 
+      
+      - name: "login to docker hub"
+        run: docker login --username mohamednower --password 123456MM7815
+        
+
+
 
 
 
